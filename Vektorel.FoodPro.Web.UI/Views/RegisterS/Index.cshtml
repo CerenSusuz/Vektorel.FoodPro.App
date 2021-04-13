@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<center><h1>Shipper Register Page</h1></center>
+
+<form action="@Url.Action("Save","RegisterS")" method="post">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="offset-4 text-primary" for="cname"><b>Company Name:</b></label>
+    <input type="text" name="CompanyName" id="cname" />
+    <br />
+    <label class="offset-5 text-primary" for="phone"><b>Phone:</b></label>
+    <input type="text" name="Phone" />
+    <br />
+    <input id="save" class="btn-danger offset-6" type="submit" onclick="GiveMsg()" value="Save It" />
+</form>
+<script>
+    function GiveMsg() {
+        alert("Register OK!");
+    }
+</script>

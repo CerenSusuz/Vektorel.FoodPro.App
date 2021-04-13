@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<center><h1>Category Register Page</h1></center>
+
+<form action="@Url.Action("Save","RegisterC")" method="post">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="offset-4 text-primary" for="cname"><b>Category Name:</b></label>
+    <input type="text" name="CategoryName" id="cname" />
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="offset-4 text-primary" for="desc"><b>Description:</b></label>
+    <input type="text" name="Description" id="desc"/>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="offset-4 text-primary" for="picture"><b>Picture:</b></label>
+    <input type="image" name="Picture" id="picture"/>
+    <br />
+    <input id="save" class="btn-danger offset-6" type="submit" onclick="GiveMsg()" value="Save It" />
+</form>
+<script>
+    function GiveMsg() {
+        alert("Register OK!");
+    }
+</script>
+
